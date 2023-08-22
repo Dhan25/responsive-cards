@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .card {
+        @apply rounded-xl shadow-lg;
+    }
+
+    .image {
+        @apply relative rounded-xl overflow-hidden w-full object-cover object-center;
+    }
+
+    .img-hover {
+        @apply hover:scale-110 duration-300 cursor-pointer;
+    }
+
+    .title {
+        @apply text-2xl md:text-3xl font-medium mt-3 font-oxygen;
+    }
+
+    .para {
+        @apply text-slate-500 text-xl lg:text-lg mt-3;
+    }
+}
